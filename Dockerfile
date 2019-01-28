@@ -1,6 +1,5 @@
-FROM centos
+FROM centos:latest
 MAINTAINER khoa
-
 
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
