@@ -10,6 +10,6 @@ RUN mkdir -p /data/www
 RUN cd /data/www
 
 ENTRYPOINT ["php"]
-CMD ["-S", "http://192.168.99:80", "/data/www"]
+CMD ["-S", "--port=80", "--admin_host=0.0.0.0", "--api_host=0.0.0.0", "--host=0.0.0.0", "--enable_host_checking=false", "/data/www"]
  
 EXPOSE 80
