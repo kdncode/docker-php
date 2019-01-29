@@ -10,6 +10,6 @@ RUN mkdir -p /data/www
 RUN cd /data/www
 
 ENTRYPOINT ["php"]
-CMD ["-S", "0.0.0.0:80"]
+CMD ["-S", "0.0.0.0:80", "/data/www"]
  
 EXPOSE 80
