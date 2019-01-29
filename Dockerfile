@@ -11,6 +11,6 @@ RUN cd /data/www
 RUN php -S 0.0.0.0:80
 
 ENTRYPOINT ["php"]
-CMD ["-S", "locaholst:80"]
+CMD ["-S", "0.0.0.0:80"]
  
 EXPOSE 80
