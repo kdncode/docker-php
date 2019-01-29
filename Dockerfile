@@ -8,7 +8,6 @@ RUN yum -y install php56u-gd php56u-mysqlnd php56u-fpm php56u-pgsql php56u-commo
 
 RUN mkdir -p /data/www
 RUN cd /data/www
-RUN php -S 0.0.0.0:80
 
 ENTRYPOINT ["php"]
 CMD ["-S", "0.0.0.0:80"]
