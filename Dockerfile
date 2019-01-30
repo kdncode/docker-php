@@ -10,6 +10,6 @@ RUN mkdir -p /data/www
 RUN cd /data/www
 
 ENTRYPOINT ["php"]
-CMD ["0.0.0.0:80"]
+CMD ["-S", "locaholst:80"]
  
 EXPOSE 80
